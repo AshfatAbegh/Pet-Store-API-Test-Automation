@@ -69,7 +69,7 @@ public class UserTests {
     
 
     @Test(priority = 4)
-    public void testDeleteByName(){
+    public void testDeleteUserByName(){
         Response response = UserEndpoints.deleteUser(this.userPayload.getUsername());
 
         Assert.assertEquals(response.getStatusCode(), 200);
